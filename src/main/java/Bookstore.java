@@ -316,7 +316,7 @@ public class Bookstore implements Serializable {
     }
 
     /** Método de retorno da lista dos Best Sellers */
-    public List<Book> getBestSellers(String subject){
+    public List<Book> getBestSellers(String subject, int number){
     	ArrayList<Book> books = new ArrayList<Book>();
         for (Book book : booksById) {
             if (subject.equals(book.getSubject())) {
@@ -354,7 +354,10 @@ public class Bookstore implements Serializable {
             }
         });
         ArrayList<Book> related = new ArrayList<Book>();
-        for (int j = 0; j < 50 && j < sorted.length; j++) {
+        if (number < 1) {
+        	number = 50;
+        }
+        for (int j = 0; j < number && j < sorted.length; j++) {
             related.add(sorted[j].book);
         }
         return related;
