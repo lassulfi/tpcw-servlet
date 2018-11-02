@@ -315,6 +315,60 @@ public class Bookstore implements Serializable {
         updateRelatedBooks(book);
     }
 
+    /** Método de retorno da lista dos Best Sellers com tamanho fixo */
+    public List<Book> getBestSellers(String subject){
+    	return getBestSellers(subject, 50);
+    }
+    
+    /** Método de retorno da lista dos Best Sellers */
+    public List<Book> getBestSellers(String subject, int number){
+    	ArrayList<Book> books = new ArrayList<Book>();
+        for (Book book : booksById) {
+            if (subject.equals(book.getSubject())) {
+                books.add(book);
+            }
+        }
+        Iterator<Order> i = ordersByCreation.iterator();
+        HashMap<Integer, Counter> counters = new HashMap<Integer, Counter>();
+        i = ordersByCreation.iterator();
+        while (i.hasNext()) {
+            Order order = i.next();
+            for (Book bookList : booksById) {
+                for (OrderLine orderList : order.getLines()) {
+                    Book Obook = orderList.getBook();
+                    if (bookList.getId() == Obook.getId()) {
+                        Counter counter = counters.get(Obook.getId());
+                        if (counter == null) {
+                            counter = new Counter();
+                            counter.book = Obook;
+                            counter.count = 0;
+                            counters.put(Obook.getId(), counter);
+                        }
+                        counter.count += orderList.getQty();
+                    }
+                }
+            }
+        }
+        Counter[] sorted = counters.values().toArray(new Counter[] {});
+        Arrays.sort(sorted, new Comparator<Counter>() {
+            public int compare(Counter a, Counter b) {
+                if (b.count > a.count) {
+                    return 1;
+                }
+                return b.count < a.count ? -1 : 0;
+            }
+        });
+        ArrayList<Book> related = new ArrayList<Book>();
+        if (number < 1) {
+        	number = 50;
+        }
+        for (int j = 0; j < number && j < sorted.length; j++) {
+            related.add(sorted[j].book);
+        }
+        return related;
+    }
+    
+    
     /**
      * For all the clients that bought this book in the last 10000 orders, what
      * are the five most sold books except this one.

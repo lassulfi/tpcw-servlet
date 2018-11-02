@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="TPCW_Database" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="547" width="547" x="6072" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="TPCW_Database.RefreshCustomerSessionAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="151" width="219" x="5190" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="TPCW_Populate" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Populate.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="143" x="2911" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="TPCW_best_sellers_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_best_sellers_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="685" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="TPCW_buy_confirm_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_buy_confirm_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="3864" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="TPCW_promotional_processing" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_promotional_processing.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="408" x="3094" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="TPCW_customer_registration_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_customer_registration_servlet.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="1007" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="TPCW_Database.StateMachine" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="169" width="162" x="5868" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="TPCW_say_hello" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_say_hello.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="312" x="1329" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="TPCW_admin_response_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_admin_response_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="363" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="Address" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Address.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="367" width="280" x="8485" y="2158"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="Bookstore.Counter" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Bookstore.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="85" x="7705" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="TPCW_Database.CartUpdateAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="319" x="6347" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="Cart" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Cart.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="367" width="176" x="7192" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="TPCW_StartupListener" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_StartupListener.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="115" width="236" x="4186" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="TPCW_Database.PopulateAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="241" width="218" x="6706" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="TPCW_Database.TreplicaException" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="79" width="126" x="5660" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="CartLine" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/CartLine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="169" width="131" x="7218" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="TPCW_order_inquiry_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_order_inquiry_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="4784" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="TPCW_execute_search" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_execute_search.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="OrderLine" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/OrderLine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="223" width="186" x="7872" y="2158"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="TPCW_admin_request_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_admin_request_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="1681" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="TPCW_new_products_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_new_products_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="5750" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="TPCW_order_display_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_order_display_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="115" width="282" x="4462" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="TPCW_Database.ConfirmBuyAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="313" width="380" x="7389" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="26" language="java" name="TPCW_Database.Action" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="79" width="148" x="5002" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="27" language="java" name="Book" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Book.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1015" width="532" x="7229" y="2565"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="TPCW_Database.CreateCartAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="133" width="214" x="6964" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="TPCW_Database.BookstoreAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="115" width="214" x="6112" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="Country" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Country.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="277" width="180" x="8786" y="2565"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="Order" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Order.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="475" width="450" x="8050" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="Customer" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Customer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="763" width="586" x="7872" y="840"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="TPCW_search_request_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_search_request_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="5106" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="Author" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Author.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="277" width="213" x="7832" y="3670"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="TPCW_Database.UpdateBookAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="253" x="6054" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="TPCW_shopping_cart_interaction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_shopping_cart_interaction.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="3542" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="TPCW_Util" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Util.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="187" width="224" x="2647" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="TPCW_product_detail_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_product_detail_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="5428" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="TPCW_Database.CreateCustomerAction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_Database.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="367" width="565" x="5449" y="1643"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="CCTransaction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/CCTransaction.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="367" width="347" x="8098" y="2158"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="Bookstore" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/Bookstore.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="763" width="583" x="8479" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="TPCW_home_interaction" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_home_interaction.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="2003" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="TPCW_buy_request_servlet" project="tpcw-servlet-grupoXX" 
+    file="/tpcw-servlet-grupoXX/src/main/java/TPCW_buy_request_servlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="282" x="2325" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="44">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="45" name="customersById"/>      
+      <multiplicity id="46" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="47">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <generalization id="48">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <association id="49">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="50" name="book"/>      
+      <multiplicity id="51" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="53" name="lines"/>      
+      <multiplicity id="54" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="55">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="56" name="customersByUsername"/>      
+      <multiplicity id="57" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="58">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <generalization id="59">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <realization id="60">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <generalization id="61">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <association id="62">    
+    <bendpoint x="7799" y="1643"/>    
+    <bendpoint x="7799" y="2158"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="63" name="book"/>      
+      <multiplicity id="64" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <bendpoint x="7820" y="840"/>    
+    <bendpoint x="7820" y="1643"/>    
+    <bendpoint x="7820" y="2158"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="66" name="booksById"/>      
+      <multiplicity id="67" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="68">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="69" name="billingAddress"/>      
+      <multiplicity id="70" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <bendpoint x="8509" y="840"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="72" name="ordersByCreation"/>      
+      <multiplicity id="73" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="74">    
+    <bendpoint x="7398" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="25"/>  
+  </nesting>  
+  <association id="75">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="76" name="country"/>      
+      <multiplicity id="77" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="78">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="79" name="mostRecentOrder"/>      
+      <multiplicity id="80" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="81">    
+    <bendpoint x="8530" y="840"/>    
+    <bendpoint x="8530" y="1643"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="82" name="addressByAll"/>      
+      <multiplicity id="83" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="84">    
+    <bendpoint x="7841" y="840"/>    
+    <bendpoint x="7841" y="1643"/>    
+    <bendpoint x="7841" y="2158"/>    
+    <bendpoint x="7841" y="2565"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="85" name="authorsById"/>      
+      <multiplicity id="86" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="88" name="shippingAddress"/>      
+      <multiplicity id="89" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="91" name="related4"/>      
+      <multiplicity id="92" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="94" name="author"/>      
+      <multiplicity id="95" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="96">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <association id="97">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="98" name="related2"/>      
+      <multiplicity id="99" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="100">    
+    <bendpoint x="8551" y="840"/>    
+    <bendpoint x="8551" y="1643"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="101" name="addressById"/>      
+      <multiplicity id="102" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="103">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="104" name="country"/>      
+      <multiplicity id="105" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="106">    
+    <bendpoint x="8019" y="1643"/>    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="107" name="address"/>      
+      <multiplicity id="108" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="109">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="110" name="related1"/>      
+      <multiplicity id="111" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="112">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="113" name="related3"/>      
+      <multiplicity id="114" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="115">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="116" name="customer"/>      
+      <multiplicity id="117" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="118">    
+    <bendpoint x="7233" y="2158"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="119" name="book"/>      
+      <multiplicity id="120" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="121">    
+    <bendpoint x="8816" y="840"/>    
+    <bendpoint x="8816" y="1643"/>    
+    <bendpoint x="8816" y="2158"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="122" name="countryByName"/>      
+      <multiplicity id="123" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="124">    
+    <bendpoint x="8795" y="840"/>    
+    <bendpoint x="8795" y="1643"/>    
+    <bendpoint x="8795" y="2158"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="125" name="countryById"/>      
+      <multiplicity id="126" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="127">    
+    <bendpoint x="5816" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="26"/>  
+  </nesting>  
+  <association id="128">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="129" name="linesByBookId"/>      
+      <multiplicity id="130" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="131">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="132" name="related5"/>      
+      <multiplicity id="133" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="134">    
+    <bendpoint x="5837" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <nesting id="135">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <nesting id="136">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="17"/>  
+  </nesting>  
+  <association id="137">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="138" name="cartsById"/>      
+      <multiplicity id="139" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="140">    
+    <bendpoint x="6398" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <association id="141">    
+    <bendpoint x="8488" y="840"/>    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="142" name="ordersById"/>      
+      <multiplicity id="143" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="144">    
+    <bendpoint x="6081" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="35"/>  
+  </nesting>  
+  <nesting id="145">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="29"/>  
+  </nesting>  
+  <association id="146">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="147" name="cc"/>      
+      <multiplicity id="148" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="40" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="149">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="150" name="stateMachine"/>      
+      <multiplicity id="151" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="152">    
+    <bendpoint x="6356" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="13"/>  
+  </nesting>  
+  <generalization id="153">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <nesting id="154">    
+    <bendpoint x="6060" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="39"/>  
+  </nesting>  
+  <nesting id="155">    
+    <bendpoint x="6527" y="840"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <generalization id="156">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="29"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
