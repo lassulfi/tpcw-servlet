@@ -328,10 +328,9 @@ public class Bookstore implements Serializable {
         i = ordersByCreation.iterator();
         while (i.hasNext()) {
             Order order = i.next();
-            for (Book bookList : booksById) {
                 for (OrderLine orderList : order.getLines()) {
                     Book Obook = orderList.getBook();
-                    if (bookList.getId() == Obook.getId() && subject.equals(Obook.getSubject())) {
+                    if (subject.equals(Obook.getSubject())) {
                         Counter counter = counters.get(Obook.getId());
                         if (counter == null) {
                             counter = new Counter();
@@ -342,7 +341,6 @@ public class Bookstore implements Serializable {
                         counter.count += orderList.getQty();
                     }
                 }
-            }
         }
         Counter[] sorted = counters.values().toArray(new Counter[] {});
         Arrays.sort(sorted, new Comparator<Counter>() {
