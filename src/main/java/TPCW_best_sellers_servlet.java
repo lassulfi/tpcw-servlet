@@ -90,6 +90,14 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
 
       //TODO: Display best sellers
       
+      
+      
+            
+      out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
+      out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
+      out.print("<TD><FONT SIZE=\"+1\">Author</FONT></TD>\n"); 
+      out.print("<TD><FONT SIZE=\"+1\">Title</FONT></TD></TR>\n");
+      
       List<Book> books = TPCW_Database.getBestSellers(subject);
       for(int i = 0; i < books.size(); i++){
 	  Book book = books.get(i);
@@ -105,13 +113,6 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
 	  out.print("<TD><A HREF=\"" + res.encodeUrl(url));
 	  out.print("\">" + book.getTitle() + "</A></TD></TR>\n");
       }
-      
-            
-      out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
-      out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
-      out.print("<TD><FONT SIZE=\"+1\">Author</FONT></TD>\n"); 
-      out.print("<TD><FONT SIZE=\"+1\">Title</FONT></TD></TR>\n");
-
       out.print("</TABLE><P><CENTER>\n");
       
       url = "TPCW_shopping_cart_interaction?ADD_FLAG=N";
