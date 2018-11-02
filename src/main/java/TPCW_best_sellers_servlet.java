@@ -90,6 +90,23 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
 
       //TODO: Display best sellers
       
+      List<Book> books = TPCW_Database.getNewProducts(subject);
+      for(int i = 0; i < books.size(); i++){
+	  Book book = books.get(i);
+	  out.print("<TR><TD>" + (i+1) + "</TD>\n");
+	  out.print("<TD><I>"+ book.getAuthor().getFname() +" "+
+	            book.getAuthor().getLname() +"</I></TD>\n");
+	  url = "TPCW_product_detail_servlet?I_ID="
+	      + String.valueOf(book.getId());
+	  if(SHOPPING_ID != null)
+	      url = url + "&SHOPPING_ID=" + SHOPPING_ID;
+	  if(C_ID != null)
+	      url = url + "&C_ID=" + C_ID;
+	  out.print("<TD><A HREF=\"" + res.encodeUrl(url));
+	  out.print("\">" + book.getTitle() + "</A></TD></TR>\n");
+      }
+      
+            
       out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
       out.print("<TR> <TD WIDTH=\"30\"></TD>\n");
       out.print("<TD><FONT SIZE=\"+1\">Author</FONT></TD>\n"); 
