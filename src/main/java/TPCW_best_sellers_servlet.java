@@ -90,7 +90,7 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
 
       //TODO: Display best sellers
       
-      List<Book> books = TPCW_Database.getNewProducts(subject);
+      List<Book> books = TPCW_Database.getBestSellers(subject);
       for(int i = 0; i < books.size(); i++){
 	  Book book = books.get(i);
 	  out.print("<TR><TD>" + (i+1) + "</TD>\n");
