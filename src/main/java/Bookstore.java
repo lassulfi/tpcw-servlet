@@ -323,6 +323,7 @@ public class Bookstore implements Serializable {
     /** Método de retorno da lista dos Best Sellers */
     public List<Book> getBestSellers(String subject, int number){
 
+    	ArrayList<Book> aBook = new ArrayList<Book>();
         Iterator<Order> i = ordersByCreation.iterator();
         HashMap<Integer, Counter> counters = new HashMap<Integer, Counter>();
         i = ordersByCreation.iterator();
@@ -343,6 +344,7 @@ public class Bookstore implements Serializable {
                 }
         }
         Counter[] sorted = counters.values().toArray(new Counter[] {});
+        
         Arrays.sort(sorted, new Comparator<Counter>() {
             public int compare(Counter a, Counter b) {
                 if (b.count > a.count) {
@@ -350,15 +352,21 @@ public class Bookstore implements Serializable {
                 }
                 return b.count < a.count ? -1 : 0;
             }
-        });
-        ArrayList<Book> related = new ArrayList<Book>();
+        });               
+        
+        //Valida se entrada é valida, caso seja invalida assume como padrão 50 livros
         if (number < 1) {
         	number = 50;
         }
-        for (int j = 0; j < number && j < sorted.length; j++) {
-            related.add(sorted[j].book);
+        
+        //Realiza o parse de Array já dividindo conforme a quantidade padrão 
+        List<Counter> aCounter = new ArrayList<Counter>(Arrays.asList(sorted)).subList(0, number);
+        
+        for (Counter oList : aCounter) {
+        	aBook.add(oList.book);
         }
-        return related;
+        
+        return aBook;
     }
     
     
