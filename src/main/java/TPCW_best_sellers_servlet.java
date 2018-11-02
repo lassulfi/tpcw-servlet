@@ -88,7 +88,7 @@ public class TPCW_best_sellers_servlet extends HttpServlet {
       //Display promotions
       TPCW_promotional_processing.DisplayPromotions(out, req, res,-1);
 
-      //Display new products
+      //TODO: Display best sellers
       
       out.print("<TABLE BORDER=\"1\" CELLPADDING=\"1\" CELLSPACING=\"1\">\n");
       out.print("<TR> <TD WIDTH=\"30\"></TD>\n");

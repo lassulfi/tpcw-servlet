@@ -284,6 +284,7 @@ public class Bookstore implements Serializable {
         });
         return books.subList(0, books.size() >= 50 ? 50 : books.size());
     }
+    
 
     protected static class Counter {
         public Book book;
@@ -318,6 +319,7 @@ public class Bookstore implements Serializable {
      * For all the clients that bought this book in the last 10000 orders, what
      * are the five most sold books except this one.
      */
+    //TODO: Refactor in order to search 50 best sellers
     private void updateRelatedBooks(Book targetBook) {
         HashSet<Integer> clientIds = new HashSet<Integer>();
         int j = 0;
