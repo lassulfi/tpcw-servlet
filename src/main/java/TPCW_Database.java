@@ -228,10 +228,10 @@ public class TPCW_Database {
      * @param subject assunto a ser retornado
      * @return lista de livros contendo a relação de best sellers
      */
-    public static List<Book> getGestSellers(String subject){
+    public static List<Book> getBestSellers(String subject){
     	Bookstore bookstore = getBookstore();
     	synchronized (bookstore) {
-    		return bookstore.getGestSellers(subject);
+    		return bookstore.getBestSellers(subject);
 		}
     }
     
