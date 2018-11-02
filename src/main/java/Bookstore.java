@@ -322,12 +322,7 @@ public class Bookstore implements Serializable {
     
     /** Método de retorno da lista dos Best Sellers */
     public List<Book> getBestSellers(String subject, int number){
-    	ArrayList<Book> books = new ArrayList<Book>();
-        for (Book book : booksById) {
-            if (subject.equals(book.getSubject())) {
-                books.add(book);
-            }
-        }
+
         Iterator<Order> i = ordersByCreation.iterator();
         HashMap<Integer, Counter> counters = new HashMap<Integer, Counter>();
         i = ordersByCreation.iterator();
@@ -336,7 +331,7 @@ public class Bookstore implements Serializable {
             for (Book bookList : booksById) {
                 for (OrderLine orderList : order.getLines()) {
                     Book Obook = orderList.getBook();
-                    if (bookList.getId() == Obook.getId()) {
+                    if (bookList.getId() == Obook.getId() && subject.equals(Obook.getSubject())) {
                         Counter counter = counters.get(Obook.getId());
                         if (counter == null) {
                             counter = new Counter();
