@@ -315,6 +315,11 @@ public class Bookstore implements Serializable {
         updateRelatedBooks(book);
     }
 
+    /** Método de retorno da lista dos Best Sellers com tamanho fixo */
+    public List<Book> getBestSellers(String subject){
+    	return getBestSellers(subject, 50);
+    }
+    
     /** Método de retorno da lista dos Best Sellers */
     public List<Book> getBestSellers(String subject, int number){
     	ArrayList<Book> books = new ArrayList<Book>();
