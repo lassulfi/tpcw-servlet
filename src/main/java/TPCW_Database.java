@@ -221,6 +221,20 @@ public class TPCW_Database {
             return bookstore.getNewBooks(subject);
         }
     }
+    
+    /**
+     * Método que retorna a lista de best sellers para uma dada categoria a partir da bookstore
+     * 
+     * @param subject assunto a ser retornado
+     * @return lista de livros contendo a relação de best sellers
+     */
+    public static List<Book> getGestSellers(String subject){
+    	Bookstore bookstore = getBookstore();
+    	synchronized (bookstore) {
+    		return bookstore.getGestSellers(subject);
+		}
+    }
+    
 
     public static List<Book> getRelated(int i_id) {
         Bookstore bookstore = getBookstore();
