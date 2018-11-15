@@ -51,6 +51,10 @@ public class Evaluation {
 
 	public void setRate(int rate) {
 		this.rate = rate;
-	}	
+	}
+	
+	public String getEvaluationData() {
+		return customer.getId() + ","+ book.getId()+"," + rate;
+	}
 
 }
