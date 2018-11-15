@@ -82,6 +82,12 @@ public class Book implements Serializable {
     private Author author;
     private int stock;
     
+    /**
+     * C02T03 - Média das avaliações 
+     * @author esoft35
+     */
+    private float avgRate;
+    
     public Book(int id, String title, Date pubDate, String publisher,
             String subject, String desc, String thumbnail,
             String image, double srp, double cost, Date avail, String isbn,
@@ -109,6 +115,8 @@ public class Book implements Serializable {
         this.dimensions = dimensions;
         this.author = author;
         this.stock = stock;
+        //C02T03 - Adequação do construtor
+        this.avgRate = 0.0f;
     }
 
     public String getTitle() {
@@ -243,7 +251,25 @@ public class Book implements Serializable {
         stock += amount;
     }
     
-    @Override
+    /**
+     * C02T03 - Recupera a média das avalições   
+     * @return 
+     * @author esoft35
+     */
+    public float getAvgRate() {
+		return avgRate;
+	}
+
+    /**
+     * C02T03 - Define a média das avalições 
+     * @param avgRate
+     * @author esoft35
+     */
+	public void setAvgRate(float avgRate) {
+		this.avgRate = avgRate;
+	}
+
+	@Override
     public boolean equals(Object o) {
         if (o instanceof Book) {
             Book book = (Book) o;
