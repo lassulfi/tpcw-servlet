@@ -690,7 +690,7 @@ public class Bookstore implements Serializable {
 			Customer cliente = getACustomerAnyCustomer(geradorCliente);
 
 			Evaluation a = new Evaluation(i, cliente, livro, avaliacao.nextInt(5));
-			System.out.println("id:" + a.getId() + "\n" + a.getRate());
+			System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() + " rate: " + a.getRate());
 			conjuntoAvaliacoes.add(a);
 		}
 		

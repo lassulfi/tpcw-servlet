@@ -46,11 +46,9 @@ public class RecomendationTest {
 
 		// Ação
 		Recommender recommender = new Recommender(dados);
-		System.out.println(recommender.GetRecommender());
 
 		// Teste
-		Assert.assertNotNull(recommender.GetRecommender());
-		Assert.assertTrue(recommender.GetRecommender().isEmpty());
+		Assert.assertFalse(recommender.GetRecommender().isEmpty());
 		
 	}
 
