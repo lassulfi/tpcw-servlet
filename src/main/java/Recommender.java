@@ -20,6 +20,7 @@ import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 /**
  * @author esoft12 e esoft25
  * Esta classe é a implementação da tarefa C02T05
+ * Revisão: 24/11/2018 - Alterado assinatura do metodo para identificação de clientes e número de recomendações
  */
 public class Recommender {
 	
@@ -29,7 +30,7 @@ public class Recommender {
 	    file = _file;
 	}
 	
-	public List<RecommendedItem> GetRecommender() throws TasteException, IOException
+	public List<RecommendedItem> GetRecommender(int idCliente, int numRecomendacao) throws TasteException, IOException
 	{
 		 //Creating data model
 	    DataModel datamodel = new FileDataModel(file); //data
@@ -43,7 +44,7 @@ public class Recommender {
 	    //Create UserRecomender
 	    UserBasedRecommender recommender = new GenericUserBasedRecommender(datamodel, userneighborhood, usersimilarity);
 	   
-	    return  recommender.recommend(2, 3);				  
+	    return  recommender.recommend(idCliente, numRecomendacao);				  
 	}	
 	
 	public void SetFile(File _file)
