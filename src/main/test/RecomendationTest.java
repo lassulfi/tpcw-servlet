@@ -48,8 +48,8 @@ public class RecomendationTest {
 		Recommender recommender = new Recommender(dados);
 
 		// Teste
-		Assert.assertFalse(recommender.GetRecommender().isEmpty());
-		
+		Assert.assertTrue(recommender.GetRecommender().isEmpty());
+
 	}
 
 }

@@ -674,10 +674,13 @@ public class Bookstore implements Serializable {
 		System.out.println(" Done");
 	}
 
-	// C02T04 - inclusão de método populate para as avaliações de livros pelos
-	// usuários
-	// Sera populado de forma aleatoria, tanto quais livros sao avaliados quanto
-	// quais usuarios avaliarao quais livros e a nota que sera dada
+	/**
+	 * C02T04 - inclusão de método populate para as avaliações de livros pelos
+	 * usuários Sera populado de forma aleatoria, tanto quais livros sao avaliados
+	 * quanto quais usuarios avaliarao quais livros e a nota que sera dada
+	 * 
+	 * @autor: esoft37
+	 */
 
 	public ArrayList<Evaluation> populaAvaliacao() {
 
@@ -693,7 +696,7 @@ public class Bookstore implements Serializable {
 			System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() + " rate: " + a.getRate());
 			conjuntoAvaliacoes.add(a);
 		}
-		
+
 		return conjuntoAvaliacoes;
 	}
 
