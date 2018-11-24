@@ -1,5 +1,7 @@
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
@@ -43,8 +45,15 @@ public class Recommender {
 	 
 	    //Create UserRecomender
 	    UserBasedRecommender recommender = new GenericUserBasedRecommender(datamodel, userneighborhood, usersimilarity);
+	    
+	    FileReader fr = new FileReader(file);
+	    BufferedReader bf = new BufferedReader(fr);
+	    String linha = bf.readLine();
+	    String[] s = linha.split(",");
+	    System.out.println("codigo cliente: " + s[0]);
 	   
 	    return  recommender.recommend(idCliente, numRecomendacao);				  
+
 	}	
 	
 	public void SetFile(File _file)
