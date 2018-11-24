@@ -687,15 +687,19 @@ public class Bookstore implements Serializable {
 		Random geradorLivro = new Random();
 		Random geradorCliente = new Random();
 		Random avaliacao = new Random();
-		for (int i = 1; i < 1001; i++) {
 
-			Book livro = getABookAnyBook(geradorLivro);
-			Customer cliente = getACustomerAnyCustomer(geradorCliente);
-
-			Evaluation a = new Evaluation(i, cliente, livro, avaliacao.nextInt(5));
-			System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() + " rate: " + a.getRate());
-			conjuntoAvaliacoes.add(a);
-		}
+		Book livro = getBook(5);
+		Customer cliente = getCustomer(5);
+		Evaluation a = new Evaluation(0, cliente, livro, avaliacao.nextInt(5));
+		// System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() + "
+		// rate: " + a.getRate());
+		conjuntoAvaliacoes.add(a);
+		
+		livro = getBook(5);
+		cliente = getCustomer(5);
+		// System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() + "
+		// rate: " + a.getRate());
+		conjuntoAvaliacoes.add(new Evaluation(0, cliente, livro, avaliacao.nextInt(5)));
 
 		return conjuntoAvaliacoes;
 	}

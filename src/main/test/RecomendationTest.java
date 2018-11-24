@@ -1,4 +1,7 @@
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,6 +10,7 @@ import java.util.List;
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.model.DataModel;
+import org.apache.mahout.cf.taste.recommender.RecommendedItem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,27 +33,48 @@ public class RecomendationTest {
 	}
 
 	@Test
-	public void deveGerarRecomendacoes() throws Exception, IOException {
+	public void deveGerarRecomendacoes() throws IOException {
 
 		// Cenário
 		avaliacoes = bookstore.populaAvaliacao();
 		File dados = new File("dados.txt");
+		FileWriter fWriter = new FileWriter(dados, true);
 		try {
-			FileWriter fWriter = new FileWriter(dados, true);
 			for (Evaluation avaliacao : avaliacoes) {
 				fWriter.write(avaliacao.getEvaluationData() + "\n");
 			}
-			fWriter.close();
 		} catch (IOException e) {
 			System.out.println("erro ao gravar arquivo");
+		} finally {
+			fWriter.close();
 		}
+		
+		FileReader fr = new FileReader(dados);
+	    BufferedReader bf = new BufferedReader(fr);
+	    String linha = bf.readLine();
+	    String[] s = linha.split(",");
+	    bf.close();
+	    fr.close();
 
 		// Ação
 		Recommender recommender = new Recommender(dados);
+		
+		List<RecommendedItem> recomendations = null;
+		
+		try {
+			recomendations = recommender.GetRecommender(Integer.parseInt(s[0]),5);
+		} catch (NumberFormatException | TasteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		// Teste
-		Assert.assertTrue(recommender.GetRecommender().isEmpty());
-
+		System.out.println("ID Cliente: " + s[0]);
+		System.out.println("Recomendações:");
+		for(RecommendedItem r : recomendations){
+			System.out.println(r);
+		}
+		Assert.assertTrue(recomendations.isEmpty());
 	}
 
 }
