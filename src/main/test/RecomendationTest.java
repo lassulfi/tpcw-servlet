@@ -1,9 +1,11 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +25,7 @@ import org.junit.Test;
  */
 public class RecomendationTest {
 
-	private ArrayList<Evaluation> avaliacoes;
+	private List<Evaluation> evaluations;
 	private Bookstore bookstore = new Bookstore();
 
 	@Before
@@ -36,45 +38,47 @@ public class RecomendationTest {
 	public void deveGerarRecomendacoes() throws IOException {
 
 		// Cenário
-		avaliacoes = bookstore.populaAvaliacao();
+		evaluations = bookstore.populaAvaliacao();
 		File dados = new File("dados.txt");
-		FileWriter fWriter = new FileWriter(dados, true);
+		BufferedWriter bfWritter = new BufferedWriter(new FileWriter(dados, false));
+		//Primeiramente apaga o conteudo do arquivo
+		PrintWriter pWriter = new PrintWriter(bfWritter);
 		try {
-			for (Evaluation avaliacao : avaliacoes) {
-				fWriter.write(avaliacao.getEvaluationData() + "\n");
+			pWriter.flush();
+			for (Evaluation evaluation : evaluations) {
+				bfWritter.write(evaluation.getEvaluationData() + "\n");
 			}
 		} catch (IOException e) {
 			System.out.println("erro ao gravar arquivo");
 		} finally {
-			fWriter.close();
+			pWriter.close();
+			bfWritter.close();
 		}
-		
+
 		FileReader fr = new FileReader(dados);
-	    BufferedReader bf = new BufferedReader(fr);
-	    String linha = bf.readLine();
-	    String[] s = linha.split(",");
-	    bf.close();
-	    fr.close();
+		BufferedReader bf = new BufferedReader(fr);
+		String linha = bf.readLine();
+		String[] s = linha.split(",");
+		bf.close();
+		fr.close();
 
 		// Ação
 		Recommender recommender = new Recommender(dados);
-		
-		List<RecommendedItem> recomendations = null;
-		
+		recommender.setPreference(0.1);
+
 		try {
-			recomendations = recommender.GetRecommender(Integer.parseInt(s[0]),5);
-		} catch (NumberFormatException | TasteException e) {
-			// TODO Auto-generated catch block
+			List<RecommendedItem> recomendations = recommender.GetRecommender(Long.valueOf(s[0]), 2);
+			// Teste
+			System.out.println("ID Cliente: " + s[0]);
+			System.out.println("Recomendações:");
+			for (RecommendedItem r : recomendations) {
+				System.out.println(r);
+			}
+			Assert.assertFalse(recomendations.isEmpty());
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		// Teste
-		System.out.println("ID Cliente: " + s[0]);
-		System.out.println("Recomendações:");
-		for(RecommendedItem r : recomendations){
-			System.out.println(r);
-		}
-		Assert.assertTrue(recomendations.isEmpty());
 	}
 
 }

@@ -81,7 +81,7 @@ public class Bookstore implements Serializable {
 	private ArrayList<Order> ordersById;
 	private LinkedList<Order> ordersByCreation;
 	// C02T04 - Gera lista de Evaluation que será o conjunto de avaliacoes
-	private ArrayList<Evaluation> conjuntoAvaliacoes;
+	private List<Evaluation> evaluations;
 
 	public Bookstore() {
 		populated = false;
@@ -97,7 +97,7 @@ public class Bookstore implements Serializable {
 		ordersById = new ArrayList<Order>();
 		ordersByCreation = new LinkedList<Order>();
 		// C02T04 - Define a ArrayList no construtor da classe
-		conjuntoAvaliacoes = new ArrayList<Evaluation>();
+		evaluations = new ArrayList<Evaluation>();
 	}
 
 	public boolean isPopulated() {
@@ -682,26 +682,72 @@ public class Bookstore implements Serializable {
 	 * @autor: esoft37
 	 */
 
-	public ArrayList<Evaluation> populaAvaliacao() {
+	public List<Evaluation> populaAvaliacao() {
 
-		Random geradorLivro = new Random();
-		Random geradorCliente = new Random();
-		Random avaliacao = new Random();
+		Random r = new Random();
 
-		Book livro = getBook(5);
-		Customer cliente = getCustomer(5);
-		Evaluation a = new Evaluation(0, cliente, livro, avaliacao.nextInt(5));
+		List<Book> books = new ArrayList<>();
+		List<Customer> customers = new ArrayList<>();
+
+		// Geração de 1000 livros
+		for (int i = 0; i < 1000; i++) {
+			books.add(this.getBook(r.nextInt(1000)));
+		}
+
+		// Geração de 50 clientes
+		for (int i = 0; i < 50; i++) {
+			customers.add(this.getCustomer(r.nextInt(50)));
+		}
+
+		// Cria 500 avaliacoes
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(0), books.get(i), (double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(1), books.get(i), (double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(2), books.get(i), (double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(3), books.get(i), (double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(4), books.get(i), (double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(5), books.get(i),(double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(6), books.get(i), (double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(7), books.get(i),(double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(8), books.get(i), (double) (5 - i)));
+		}
+		for (int i = 0; i < 5; i++) {
+			evaluations.add(new Evaluation(i, customers.get(9), books.get(i), (double) (5 - i)));
+		}
+		Collections.sort(evaluations);
+
+		// Book livro = getBook(5);
+		// Customer cliente = getCustomer(5);
+		// Evaluation a = new Evaluation(0, cliente, livro, avaliacao.nextInt(5));
+		// // System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() +
+		// "
+		// // rate: " + a.getRate());
+		// conjuntoAvaliacoes.add(a);
+		//
+		// livro = getBook(5);
+		// cliente = getCustomer(5);
 		// System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() + "
 		// rate: " + a.getRate());
-		conjuntoAvaliacoes.add(a);
-		
-		livro = getBook(5);
-		cliente = getCustomer(5);
-		// System.out.println("id:" + a.getId() + "id cliente: " + cliente.getId() + "
-		// rate: " + a.getRate());
-		conjuntoAvaliacoes.add(new Evaluation(0, cliente, livro, avaliacao.nextInt(5)));
+		// conjuntoAvaliacoes.add(new Evaluation(0, cliente, livro,
+		// avaliacao.nextInt(5)));
 
-		return conjuntoAvaliacoes;
+		return evaluations;
 	}
 
 }

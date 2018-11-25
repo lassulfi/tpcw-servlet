@@ -1,7 +1,5 @@
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
@@ -10,13 +8,10 @@ import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.impl.neighborhood.ThresholdUserNeighborhood;
 import org.apache.mahout.cf.taste.impl.recommender.GenericUserBasedRecommender;
 import org.apache.mahout.cf.taste.impl.similarity.PearsonCorrelationSimilarity;
-
 import org.apache.mahout.cf.taste.model.DataModel;
 import org.apache.mahout.cf.taste.neighborhood.UserNeighborhood;
-
 import org.apache.mahout.cf.taste.recommender.RecommendedItem;
 import org.apache.mahout.cf.taste.recommender.UserBasedRecommender;
-
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 
 /**
@@ -28,11 +23,22 @@ public class Recommender {
 
 	private File file;
 
+	private double preference;
+
 	public Recommender(File _file) {
 		file = _file;
 	}
 
-	public List<RecommendedItem> GetRecommender(int idCliente, int numRecomendacao) throws TasteException, IOException {
+	public void SetFile(File _file) {
+		file = _file;
+	}
+
+	public void setPreference(double preference) {
+		this.preference = preference;
+	}
+
+	public List<RecommendedItem> GetRecommender(long idCliente, int numRecomendacao)
+			throws TasteException, IOException {
 		// Creating data model
 		DataModel datamodel = new FileDataModel(file); // data
 
@@ -40,16 +46,12 @@ public class Recommender {
 		UserSimilarity usersimilarity = new PearsonCorrelationSimilarity(datamodel);
 
 		// Creating UserNeighbourHHood object.
-		UserNeighborhood userneighborhood = new ThresholdUserNeighborhood(3.0, usersimilarity, datamodel);
+		UserNeighborhood userneighborhood = new ThresholdUserNeighborhood(preference, usersimilarity, datamodel);
 
 		// Create UserRecomender
 		UserBasedRecommender recommender = new GenericUserBasedRecommender(datamodel, userneighborhood, usersimilarity);
 
 		return recommender.recommend(idCliente, numRecomendacao);
-
 	}
 
-	public void SetFile(File _file) {
-		file = _file;
-	}
 }

@@ -1,3 +1,4 @@
+import java.util.Locale;
 
 /**
  * C02T03
@@ -7,14 +8,14 @@
  * @author esoft35
  *
  */
-public class Evaluation {
+public class Evaluation implements Comparable<Evaluation> {
 
 	private int id;
 	private Customer customer;
 	private Book book;
-	private int rate;
+	private double rate;
 
-	public Evaluation(int id, Customer customer, Book book, int rate) {
+	public Evaluation(int id, Customer customer, Book book, double rate) {
 		this.id = id;
 		this.customer = customer;
 		this.book = book;
@@ -45,16 +46,27 @@ public class Evaluation {
 		this.book = book;
 	}
 
-	public int getRate() {
+	public double getRate() {
 		return rate;
 	}
 
-	public void setRate(int rate) {
+	public void setRate(double rate) {
 		this.rate = rate;
 	}
 
 	public String getEvaluationData() {
-		return customer.getId() + "," + book.getId() + "," + rate;
+		return customer.getId() + "," + book.getId() + "," + String.format(Locale.ROOT, "%.1f", rate);
+	}
+
+	@Override
+	public int compareTo(Evaluation eval) {
+		if (this.customer.getId() > eval.customer.getId()) {
+			return 1;
+		} else if (this.customer.getId() < eval.customer.getId()) {
+			return -1;
+		} else {
+			return 0;
+		}
 	}
 
 }
